@@ -53,7 +53,7 @@ public class JdbcAnonymizerServiceTest extends AbstractInMemoryHsqlDbTest {
                 getIntResult("select count(*) from TABLE1 where COL1 like 'varcharstring%'"));
 
         assertEquals(
-                "Rows dissapeared from the data set.",
+                "Rows disappeared from the data set.",
                 100,
                 getIntResult("select count(*) from TABLE1 where COL1 not like 'varcharstring%'"));
     }
